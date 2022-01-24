@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+
+  crepitus_bot:
+    build: .
+    command: bash -c "python main.py"
+    volumes:
+      - .:/crepitus_bot
+    ports:
+      - 8000:8000
